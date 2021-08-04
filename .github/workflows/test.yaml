@@ -1,14 +1,16 @@
-name: testing_r
-on:[push]
-
+name: your-workflow-name
+on: [push]
 jobs:
- run:
-   runs-on: [ubuntu-latest]
+  run:
+    runs-on: ubuntu-latest
     # optionally use a convenient Ubuntu LTS + CUDA + DVC + CML image
     # container: docker://iterativeai/cml:0-dvc2-base1-gpu
     # container: docker://ghcr.io/iterative/cml:0-dvc2-base1-gpu
     steps:
       - uses: actions/checkout@v2
+    # optionally use a convenient Ubuntu LTS + CUDA + DVC + CML image
+    # container: docker://iterativeai/cml:0-dvc2-base1-gpu
+    # container: docker://ghcr.io/iterative/cml:0-dvc2-base1-gpu
       - name: Setup R
         uses: r-lib/actions/setup-r@master
         
