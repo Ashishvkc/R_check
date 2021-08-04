@@ -24,4 +24,10 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
+      - name: Analyse
+        env:
+           repo_token :: ${{secrets.GITHUB_TOKEN }}
+        run: |
+          R -e 'renv::run("ClassifyData.R")'
+      
       
