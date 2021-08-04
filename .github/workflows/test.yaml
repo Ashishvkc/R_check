@@ -21,7 +21,6 @@ jobs:
       - name: Analyse
         env:
            repo_token :: ${{secrets.GITHUB_TOKEN }}
-        run: |
-          R -e 'renv::run("ClassifyData.R")'
+        
       
       
