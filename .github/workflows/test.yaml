@@ -1,14 +1,9 @@
-name: your-workflow-name
-on:
-push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+name: testing_r
+on:[push]
+
 jobs:
-  run:
-    runs-on: ubuntu-latest
+ run:
+   runs-on: [ubuntu-latest]
     # optionally use a convenient Ubuntu LTS + CUDA + DVC + CML image
     # container: docker://iterativeai/cml:0-dvc2-base1-gpu
     # container: docker://ghcr.io/iterative/cml:0-dvc2-base1-gpu
