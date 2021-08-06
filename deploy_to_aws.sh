@@ -4,7 +4,7 @@ ssh ubuntu@3.234.99.37 "
         cd ~/R_check 
         mkdir ash
        
-        git pull
-        git fetch origin
+        git push
+        
         "
 echo 'Deployment completed successfully'
