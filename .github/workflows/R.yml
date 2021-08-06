@@ -18,7 +18,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           #name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
-     # - name: Adding Known Hosts
+     ## - name: Adding Known Hosts
      #   run: ssh-keyscan -H ${{ secrets.KNOWN_HOSTS }} >> ~/.ssh/known_hosts  
       - name: change permission
         run: chmod +x deploy_to_aws.sh
