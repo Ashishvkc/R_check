@@ -1,6 +1,8 @@
 echo 'Starting to Deploy...'
 ssh ubuntu@3.234.99.37 " 
-        cd /newstorage/users/ashish/R_check 
+        sudo su -l ashish 
+        cd ~/R_check 
+        mkdir ash
        
         git pull
         git fetch origin
