@@ -42,7 +42,7 @@ getAllowedDateFormats <- function() {
   #patterns <- c("Ymd", "mdy", "mdY", "dmy", "dmY", "ymd", "y", "Y", "by", "bY", "By", "BY")
   #removed %y from the list to avoid getting numerical column identified, moved %Y at the front to avoid 4 digit year being classified as %d%m%y
   patterns <- c("Y","Ymd", "mdy", "mdY", "dmy", "dmY", "ymd","by", "bY", "By", "BY")
-  #patterns <- c("Y")
+  ###patterns <- c("Y")
   separators <- c("", " ", "/", "-", ".")
   #strptime {base}  /^[a-zA-Z]{3}\s+[0-9]{2}$/
   allowed.date.list <- list()
