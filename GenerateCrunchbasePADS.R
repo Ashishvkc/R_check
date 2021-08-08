@@ -10,7 +10,7 @@ library("reshape2")
 
 #
 # loadCompaniesStats
-#
+#sdfgfhgj
 loadCompaniesStats <- function(){
   stats <- readFile(paste(folder.path, comps.file, sep=""))
   if(!is.na(stats)){
