@@ -18,7 +18,7 @@ startup <- function() {
   assign("flights.folder.path", "./pads/raw-data/flights/stats/", envir=.GlobalEnv)  
   assign("dataset", "US-Flights", envir=.GlobalEnv)
   
-  #prepare pad meta data
+  ###3prepare pad meta data
   series <- list()
   series["source"] <- "Bureau of Transportation Statistics"
   series["category"] <- "Transportation"
