@@ -20,7 +20,7 @@ huliu.nwords <- huliu.nwords[!huliu.nwords=='cloud']
 
 #
 # clean up a large character string
-#
+###3
 cleanText <- function(x) {
   # tolower
   x = tolower(x)
