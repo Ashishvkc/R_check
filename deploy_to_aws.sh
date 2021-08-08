@@ -6,7 +6,7 @@ ssh ubuntu@3.234.99.37 "
         git fetch
         echo "Fetched"
         
-        git clone https://github.com/Ashishvkc/R_check.git
+        git push
         echo "cloned"
         
         "
