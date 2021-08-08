@@ -6,8 +6,8 @@ ssh ubuntu@3.234.99.37 "
         git fetch
         echo "Fetched"
         
-        git push
-        echo "cloned"
+        git pull
+        echo "pulled"
         
         "
 echo 'Deployment completed successfully'
