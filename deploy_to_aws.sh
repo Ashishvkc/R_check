@@ -5,8 +5,9 @@ ssh ubuntu@3.234.99.37 "
         cd ~/R_check
         git fetch
         echo "Fetched"
-        git pull
-        echo "pulledsd"
+        
+        git push
+        echo "pushed"
         
         "
 echo 'Deployment completed successfully'
